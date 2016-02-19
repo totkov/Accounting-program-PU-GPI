@@ -16,5 +16,15 @@ namespace Tiamat.WindowsForms
         {
             InitializeComponent();
         }
+
+        private void linkLabel_BackToLogin_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // TODO: Load Login form
+        }
+
+        private void button_SignUp_Click(object sender, EventArgs e)
+        {
+            // TODO: Registrate user
+        }
     }
 }
