@@ -1,6 +1,6 @@
-﻿namespace Tiamat.WindowsForm
+﻿namespace Tiamat.WindowsForms
 {
-    partial class MainForm
+    partial class Main
     {
         /// <summary>
         /// Required designer variable.
@@ -30,9 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "MainForm";
+            this.Text = "Form1";
         }
 
         #endregion
     }
 }
+

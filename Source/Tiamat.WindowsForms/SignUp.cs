@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Tiamat.WindowsForm
+namespace Tiamat.WindowsForms
 {
-    public partial class MainForm : Form
+    public partial class SignUp : Form
     {
-        public MainForm()
+        public SignUp()
         {
             InitializeComponent();
         }

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Tiamat.WindowsForm")]
+[assembly: AssemblyTitle("Tiamat.WindowsForms")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tiamat.WindowsForm")]
+[assembly: AssemblyProduct("Tiamat.WindowsForms")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("66bd8786-c36c-47b4-ab0d-190d9864c739")]
+[assembly: Guid("02be77c3-f988-4442-92b0-f58c15da00a5")]
 
 // Version information for an assembly consists of the following four values:
 //

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Tiamat.WindowsForm.Properties
+namespace Tiamat.WindowsForms.Properties
 {
 
 
