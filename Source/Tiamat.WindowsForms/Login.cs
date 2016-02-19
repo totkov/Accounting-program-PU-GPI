@@ -16,5 +16,16 @@ namespace Tiamat.WindowsForms
         {
             InitializeComponent();
         }
+
+        private void linkLabel_singUp_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            // TODO: Open SingUp form
+        }
+
+        private void button_login_Click(object sender, EventArgs e)
+        {
+            //TODO: User logining up 
+        }
     }
+
 }
