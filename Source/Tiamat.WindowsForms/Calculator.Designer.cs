@@ -261,6 +261,8 @@
             this.Controls.Add(this.button_8);
             this.Controls.Add(this.button_7);
             this.Controls.Add(this.textBox);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Calculator";
             this.Text = "Calculator";
             this.ResumeLayout(false);

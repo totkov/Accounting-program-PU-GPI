@@ -16,5 +16,28 @@ namespace Tiamat.WindowsForms
         {
             InitializeComponent();
         }
+
+        private void Menu_Tools_Calculator_Click(object sender, EventArgs e)
+        {
+            Calculator calculator = new Calculator();
+            calculator.Show();
+        }
+
+        private void Menu_Tools_Chart_Click(object sender, EventArgs e)
+        {
+            ChartOfAccounts chart = new ChartOfAccounts();
+            chart.Show();
+        }
+
+        private void Menu_Help_Abot_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.ShowDialog();
+        }
+
+        private void Menu_Help_Documentation_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

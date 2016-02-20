@@ -6,10 +6,10 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Tiamat.WindowsForms")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Accounting program")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Tiamat.WindowsForms")]
+[assembly: AssemblyCompany("TT")]
+[assembly: AssemblyProduct("TT Tiamat")]
 [assembly: AssemblyCopyright("Copyright ©  2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
