@@ -50,6 +50,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddAnaliticAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddAnaliticAccount.Designer.cs">
+      <DependentUpon>AddAnaliticAccount.cs</DependentUpon>
+    </Compile>
     <Compile Include="AnaliticAccounts.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,12 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddAnaliticAccount.resx">
+      <DependentUpon>AddAnaliticAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaliticAccounts.resx">
+      <DependentUpon>AnaliticAccounts.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>
