@@ -109,6 +109,7 @@
             // 
             this.textBox_Password.Location = new System.Drawing.Point(199, 57);
             this.textBox_Password.Name = "textBox_Password";
+            this.textBox_Password.PasswordChar = '*';
             this.textBox_Password.Size = new System.Drawing.Size(140, 20);
             this.textBox_Password.TabIndex = 7;
             // 
@@ -116,6 +117,7 @@
             // 
             this.textBox_RePass.Location = new System.Drawing.Point(199, 83);
             this.textBox_RePass.Name = "textBox_RePass";
+            this.textBox_RePass.PasswordChar = '*';
             this.textBox_RePass.Size = new System.Drawing.Size(140, 20);
             this.textBox_RePass.TabIndex = 8;
             // 

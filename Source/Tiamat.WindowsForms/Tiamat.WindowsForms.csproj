@@ -50,6 +50,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AccountNote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccountNote.Designer.cs">
+      <DependentUpon>AccountNote.cs</DependentUpon>
+    </Compile>
     <Compile Include="AddAnaliticAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,12 @@
     </Compile>
     <Compile Include="AnaliticAccounts.Designer.cs">
       <DependentUpon>AnaliticAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Balance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Balance.Designer.cs">
+      <DependentUpon>Balance.cs</DependentUpon>
     </Compile>
     <Compile Include="Calculator.cs">
       <SubType>Form</SubType>
@@ -98,11 +110,17 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AccountNote.resx">
+      <DependentUpon>AccountNote.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="AddAnaliticAccount.resx">
       <DependentUpon>AddAnaliticAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="AnaliticAccounts.resx">
       <DependentUpon>AnaliticAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Balance.resx">
+      <DependentUpon>Balance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Calculator.resx">
       <DependentUpon>Calculator.cs</DependentUpon>

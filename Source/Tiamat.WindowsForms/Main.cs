@@ -37,7 +37,12 @@ namespace Tiamat.WindowsForms
         private void Main_Load(object sender, EventArgs e)
         {
             Login login = new Login();
-            login.ShowDialog();
+            DialogResult result = login.ShowDialog();
+            if (result != DialogResult.OK)
+            {
+                MessageBox.Show("Моля влезте в системата с валидно потребителско име и парола!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+            }
         }
 
         private void Menu_Tools_Chart_National_Click(object sender, EventArgs e)
@@ -50,6 +55,21 @@ namespace Tiamat.WindowsForms
         {
             AnaliticAccounts analitic = new AnaliticAccounts();
             analitic.Show();
+        }
+
+        private void Menu_AccounNote_New_Click(object sender, EventArgs e)
+        {
+            AccountNote note = new AccountNote();
+            note.MdiParent = this;
+            note.Show();
+        }
+
+        private void Menu_Balance_New_Click(object sender, EventArgs e)
+        {
+            Balance balance = new Balance();
+            balance.MdiParent = this;
+            balance.Show();
+
         }
     }
 }

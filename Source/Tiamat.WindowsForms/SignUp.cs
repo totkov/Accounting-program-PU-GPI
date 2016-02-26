@@ -42,10 +42,16 @@ namespace Tiamat.WindowsForms
                         using (StreamWriter writer = new StreamWriter(stream))
                         {
                             writer.WriteLine(textBox_Username.Text + "|" + textBox_Password.Text + "|" + textBox_Mail.Text + "|" + textBox_FirstName.Text + "|" + textBox_LastName.Text);
-                            MessageBox.Show("Ok");
+                            MessageBox.Show("Регистрацията е успешна");
+                            this.Close();
                         }
                     }
                 }
+                
+            }
+            else
+            {
+                MessageBox.Show("Моля попълнете коректно всички полета!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

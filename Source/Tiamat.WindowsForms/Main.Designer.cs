@@ -81,30 +81,31 @@
             // Menu_AccounNote_New
             // 
             this.Menu_AccounNote_New.Name = "Menu_AccounNote_New";
-            this.Menu_AccounNote_New.Size = new System.Drawing.Size(115, 22);
+            this.Menu_AccounNote_New.Size = new System.Drawing.Size(152, 22);
             this.Menu_AccounNote_New.Text = "Нов";
+            this.Menu_AccounNote_New.Click += new System.EventHandler(this.Menu_AccounNote_New_Click);
             // 
             // Menu_AccounNote_Open
             // 
             this.Menu_AccounNote_Open.Name = "Menu_AccounNote_Open";
-            this.Menu_AccounNote_Open.Size = new System.Drawing.Size(115, 22);
+            this.Menu_AccounNote_Open.Size = new System.Drawing.Size(152, 22);
             this.Menu_AccounNote_Open.Text = "Отвори";
             // 
             // Menu_AccounNote_Save
             // 
             this.Menu_AccounNote_Save.Name = "Menu_AccounNote_Save";
-            this.Menu_AccounNote_Save.Size = new System.Drawing.Size(115, 22);
+            this.Menu_AccounNote_Save.Size = new System.Drawing.Size(152, 22);
             this.Menu_AccounNote_Save.Text = "Запис";
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(112, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
             // 
             // Menu_AccounNote_Print
             // 
             this.Menu_AccounNote_Print.Name = "Menu_AccounNote_Print";
-            this.Menu_AccounNote_Print.Size = new System.Drawing.Size(115, 22);
+            this.Menu_AccounNote_Print.Size = new System.Drawing.Size(152, 22);
             this.Menu_AccounNote_Print.Text = "Печат";
             // 
             // Menu_Balance
@@ -122,8 +123,9 @@
             // Menu_Balance_New
             // 
             this.Menu_Balance_New.Name = "Menu_Balance_New";
-            this.Menu_Balance_New.Size = new System.Drawing.Size(119, 22);
+            this.Menu_Balance_New.Size = new System.Drawing.Size(152, 22);
             this.Menu_Balance_New.Text = "Нов";
+            this.Menu_Balance_New.Click += new System.EventHandler(this.Menu_Balance_New_Click);
             // 
             // Menu_Balance_Open
             // 
@@ -160,7 +162,7 @@
             // Menu_Tools_Calculator
             // 
             this.Menu_Tools_Calculator.Name = "Menu_Tools_Calculator";
-            this.Menu_Tools_Calculator.Size = new System.Drawing.Size(152, 22);
+            this.Menu_Tools_Calculator.Size = new System.Drawing.Size(142, 22);
             this.Menu_Tools_Calculator.Text = "Калкулатор";
             this.Menu_Tools_Calculator.Click += new System.EventHandler(this.Menu_Tools_Calculator_Click);
             // 
@@ -170,7 +172,7 @@
             this.Menu_Tools_Chart_National,
             this.Menu_Tools_Chart_Personal});
             this.Menu_Tools_Chart.Name = "Menu_Tools_Chart";
-            this.Menu_Tools_Chart.Size = new System.Drawing.Size(152, 22);
+            this.Menu_Tools_Chart.Size = new System.Drawing.Size(142, 22);
             this.Menu_Tools_Chart.Text = "Сметкоплан";
             // 
             // Menu_Tools_Chart_National

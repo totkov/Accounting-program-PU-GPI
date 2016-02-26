@@ -44,10 +44,11 @@ namespace Tiamat.WindowsForms
                         string[] data = line.Split('|'); // {username, passwors, email, firsname, lastname}
                         if (username == data[0] && password == data[1])
                         {
-                            MessageBox.Show("Ok");
+                            DialogResult = DialogResult.OK;
                             return;
                         }
                     }
+                    MessageBox.Show("Грешен потребител или парола!", "Грешка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
 
