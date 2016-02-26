@@ -39,5 +39,11 @@ namespace Tiamat.WindowsForms
         {
 
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.ShowDialog();
+        }
     }
 }
