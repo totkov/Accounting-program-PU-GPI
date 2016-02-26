@@ -44,6 +44,8 @@
             this.Menu_Tools = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tools_Calculator = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Tools_Chart = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Tools_Chart_National = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu_Tools_Chart_Personal = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Help = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Help_Abot = new System.Windows.Forms.ToolStripMenuItem();
             this.Menu_Help_Documentation = new System.Windows.Forms.ToolStripMenuItem();
@@ -158,16 +160,32 @@
             // Menu_Tools_Calculator
             // 
             this.Menu_Tools_Calculator.Name = "Menu_Tools_Calculator";
-            this.Menu_Tools_Calculator.Size = new System.Drawing.Size(142, 22);
+            this.Menu_Tools_Calculator.Size = new System.Drawing.Size(152, 22);
             this.Menu_Tools_Calculator.Text = "Калкулатор";
             this.Menu_Tools_Calculator.Click += new System.EventHandler(this.Menu_Tools_Calculator_Click);
             // 
             // Menu_Tools_Chart
             // 
+            this.Menu_Tools_Chart.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.Menu_Tools_Chart_National,
+            this.Menu_Tools_Chart_Personal});
             this.Menu_Tools_Chart.Name = "Menu_Tools_Chart";
-            this.Menu_Tools_Chart.Size = new System.Drawing.Size(142, 22);
+            this.Menu_Tools_Chart.Size = new System.Drawing.Size(152, 22);
             this.Menu_Tools_Chart.Text = "Сметкоплан";
-            this.Menu_Tools_Chart.Click += new System.EventHandler(this.Menu_Tools_Chart_Click);
+            // 
+            // Menu_Tools_Chart_National
+            // 
+            this.Menu_Tools_Chart_National.Name = "Menu_Tools_Chart_National";
+            this.Menu_Tools_Chart_National.Size = new System.Drawing.Size(212, 22);
+            this.Menu_Tools_Chart_National.Text = "Национален сметкоплан";
+            this.Menu_Tools_Chart_National.Click += new System.EventHandler(this.Menu_Tools_Chart_National_Click);
+            // 
+            // Menu_Tools_Chart_Personal
+            // 
+            this.Menu_Tools_Chart_Personal.Name = "Menu_Tools_Chart_Personal";
+            this.Menu_Tools_Chart_Personal.Size = new System.Drawing.Size(212, 22);
+            this.Menu_Tools_Chart_Personal.Text = "Аналитични сметки";
+            this.Menu_Tools_Chart_Personal.Click += new System.EventHandler(this.Menu_Tools_Chart_Personal_Click);
             // 
             // Menu_Help
             // 
@@ -230,6 +248,8 @@
         private System.Windows.Forms.ToolStripMenuItem Menu_Help;
         private System.Windows.Forms.ToolStripMenuItem Menu_Help_Abot;
         private System.Windows.Forms.ToolStripMenuItem Menu_Help_Documentation;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Tools_Chart_National;
+        private System.Windows.Forms.ToolStripMenuItem Menu_Tools_Chart_Personal;
     }
 }
 

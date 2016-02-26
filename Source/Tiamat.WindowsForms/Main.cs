@@ -23,12 +23,6 @@ namespace Tiamat.WindowsForms
             calculator.Show();
         }
 
-        private void Menu_Tools_Chart_Click(object sender, EventArgs e)
-        {
-            ChartOfAccounts chart = new ChartOfAccounts();
-            chart.Show();
-        }
-
         private void Menu_Help_Abot_Click(object sender, EventArgs e)
         {
             About about = new About();
@@ -44,6 +38,18 @@ namespace Tiamat.WindowsForms
         {
             Login login = new Login();
             login.ShowDialog();
+        }
+
+        private void Menu_Tools_Chart_National_Click(object sender, EventArgs e)
+        {
+            ChartOfAccounts chart = new ChartOfAccounts();
+            chart.Show();
+        }
+
+        private void Menu_Tools_Chart_Personal_Click(object sender, EventArgs e)
+        {
+            AnaliticAccounts analitic = new AnaliticAccounts();
+            analitic.Show();
         }
     }
 }

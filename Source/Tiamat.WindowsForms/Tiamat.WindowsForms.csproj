@@ -50,6 +50,12 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="AnaliticAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaliticAccounts.Designer.cs">
+      <DependentUpon>AnaliticAccounts.cs</DependentUpon>
+    </Compile>
     <Compile Include="Calculator.cs">
       <SubType>Form</SubType>
     </Compile>
