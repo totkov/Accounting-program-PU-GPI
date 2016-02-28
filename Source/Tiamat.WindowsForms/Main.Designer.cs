@@ -81,33 +81,33 @@
             // Menu_AccounNote_New
             // 
             this.Menu_AccounNote_New.Name = "Menu_AccounNote_New";
-            this.Menu_AccounNote_New.Size = new System.Drawing.Size(152, 22);
+            this.Menu_AccounNote_New.Size = new System.Drawing.Size(115, 22);
             this.Menu_AccounNote_New.Text = "Нов";
             this.Menu_AccounNote_New.Click += new System.EventHandler(this.Menu_AccounNote_New_Click);
             // 
             // Menu_AccounNote_Open
             // 
             this.Menu_AccounNote_Open.Name = "Menu_AccounNote_Open";
-            this.Menu_AccounNote_Open.Size = new System.Drawing.Size(152, 22);
+            this.Menu_AccounNote_Open.Size = new System.Drawing.Size(115, 22);
             this.Menu_AccounNote_Open.Text = "Отвори";
             this.Menu_AccounNote_Open.Click += new System.EventHandler(this.Menu_AccounNote_Open_Click);
             // 
             // Menu_AccounNote_Save
             // 
             this.Menu_AccounNote_Save.Name = "Menu_AccounNote_Save";
-            this.Menu_AccounNote_Save.Size = new System.Drawing.Size(152, 22);
+            this.Menu_AccounNote_Save.Size = new System.Drawing.Size(115, 22);
             this.Menu_AccounNote_Save.Text = "Запис";
             this.Menu_AccounNote_Save.Click += new System.EventHandler(this.Menu_AccounNote_Save_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(112, 6);
             // 
             // Menu_AccounNote_Print
             // 
             this.Menu_AccounNote_Print.Name = "Menu_AccounNote_Print";
-            this.Menu_AccounNote_Print.Size = new System.Drawing.Size(152, 22);
+            this.Menu_AccounNote_Print.Size = new System.Drawing.Size(115, 22);
             this.Menu_AccounNote_Print.Text = "Печат";
             // 
             // Menu_Balance
@@ -125,32 +125,33 @@
             // Menu_Balance_New
             // 
             this.Menu_Balance_New.Name = "Menu_Balance_New";
-            this.Menu_Balance_New.Size = new System.Drawing.Size(119, 22);
+            this.Menu_Balance_New.Size = new System.Drawing.Size(152, 22);
             this.Menu_Balance_New.Text = "Нов";
             this.Menu_Balance_New.Click += new System.EventHandler(this.Menu_Balance_New_Click);
             // 
             // Menu_Balance_Open
             // 
             this.Menu_Balance_Open.Name = "Menu_Balance_Open";
-            this.Menu_Balance_Open.Size = new System.Drawing.Size(119, 22);
+            this.Menu_Balance_Open.Size = new System.Drawing.Size(152, 22);
             this.Menu_Balance_Open.Text = "Отвори";
+            this.Menu_Balance_Open.Click += new System.EventHandler(this.Menu_Balance_Open_Click);
             // 
             // Menu_Balance_Save
             // 
             this.Menu_Balance_Save.Name = "Menu_Balance_Save";
-            this.Menu_Balance_Save.Size = new System.Drawing.Size(119, 22);
+            this.Menu_Balance_Save.Size = new System.Drawing.Size(152, 22);
             this.Menu_Balance_Save.Text = "Запиши";
             this.Menu_Balance_Save.Click += new System.EventHandler(this.Menu_Balance_Save_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(116, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(149, 6);
             // 
             // Menu_Balance_Print
             // 
             this.Menu_Balance_Print.Name = "Menu_Balance_Print";
-            this.Menu_Balance_Print.Size = new System.Drawing.Size(119, 22);
+            this.Menu_Balance_Print.Size = new System.Drawing.Size(152, 22);
             this.Menu_Balance_Print.Text = "Печат";
             // 
             // Menu_Tools
@@ -219,6 +220,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(672, 408);
             this.Controls.Add(this.menuStrip);
             this.IsMdiContainer = true;

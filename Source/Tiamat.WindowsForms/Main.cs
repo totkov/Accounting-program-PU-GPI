@@ -17,23 +17,6 @@ namespace Tiamat.WindowsForms
             InitializeComponent();
         }
 
-        private void Menu_Tools_Calculator_Click(object sender, EventArgs e)
-        {
-            Calculator calculator = new Calculator();
-            calculator.Show();
-        }
-
-        private void Menu_Help_Abot_Click(object sender, EventArgs e)
-        {
-            About about = new About();
-            about.ShowDialog();
-        }
-
-        private void Menu_Help_Documentation_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Main_Load(object sender, EventArgs e)
         {
             Login login = new Login();
@@ -45,23 +28,30 @@ namespace Tiamat.WindowsForms
             }
         }
 
+        private void Menu_Help_Abot_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.ShowDialog();
+        }
+        private void Menu_Help_Documentation_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_Tools_Calculator_Click(object sender, EventArgs e)
+        {
+            Calculator calculator = new Calculator();
+            calculator.Show();
+        }
         private void Menu_Tools_Chart_National_Click(object sender, EventArgs e)
         {
             ChartOfAccounts chart = new ChartOfAccounts();
             chart.Show();
         }
-
         private void Menu_Tools_Chart_Personal_Click(object sender, EventArgs e)
         {
             AnaliticAccounts analitic = new AnaliticAccounts();
             analitic.Show();
-        }
-
-        private void Menu_AccounNote_New_Click(object sender, EventArgs e)
-        {
-            AccountNote note = new AccountNote();
-            note.MdiParent = this;
-            note.Show();
         }
 
         private void Menu_Balance_New_Click(object sender, EventArgs e)
@@ -69,19 +59,20 @@ namespace Tiamat.WindowsForms
             Balance balance = new Balance();
             balance.MdiParent = this;
             balance.Show();
-
+            balance.New();
         }
-
-        private void Menu_AccounNote_Save_Click(object sender, EventArgs e)
-        {
-            Form active = this.ActiveMdiChild;
-            var form = active as AccountNote;
-            form.Save();
-        }
-
         private void Menu_Balance_Save_Click(object sender, EventArgs e)
         {
-
+            Form active = this.ActiveMdiChild;
+            var form = active as Balance;
+            form.Save();
+        }
+        private void Menu_Balance_Open_Click(object sender, EventArgs e)
+        {
+            Balance note = new Balance();
+            note.MdiParent = this;
+            note.Show();
+            note.Load();
         }
 
         private void Menu_AccounNote_Open_Click(object sender, EventArgs e)
@@ -90,6 +81,19 @@ namespace Tiamat.WindowsForms
             note.MdiParent = this;
             note.Show();
             note.Load();
+        }
+        private void Menu_AccounNote_Save_Click(object sender, EventArgs e)
+        {
+            Form active = this.ActiveMdiChild;
+            var form = active as AccountNote;
+            form.Save();
+        }
+        private void Menu_AccounNote_New_Click(object sender, EventArgs e)
+        {
+            AccountNote note = new AccountNote();
+            note.MdiParent = this;
+            note.Show();
+            note.New();
         }
     }
 }

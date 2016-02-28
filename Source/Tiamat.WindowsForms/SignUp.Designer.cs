@@ -144,18 +144,24 @@
             // 
             // button_SignUp
             // 
+            this.button_SignUp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button_SignUp.FlatAppearance.BorderColor = System.Drawing.Color.Blue;
+            this.button_SignUp.FlatAppearance.BorderSize = 2;
+            this.button_SignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_SignUp.ForeColor = System.Drawing.Color.Black;
             this.button_SignUp.Location = new System.Drawing.Point(199, 203);
+            this.button_SignUp.Margin = new System.Windows.Forms.Padding(0);
             this.button_SignUp.Name = "button_SignUp";
-            this.button_SignUp.Size = new System.Drawing.Size(140, 23);
+            this.button_SignUp.Size = new System.Drawing.Size(140, 30);
             this.button_SignUp.TabIndex = 12;
             this.button_SignUp.Text = "Регистрирай се";
-            this.button_SignUp.UseVisualStyleBackColor = true;
+            this.button_SignUp.UseVisualStyleBackColor = false;
             this.button_SignUp.Click += new System.EventHandler(this.button_SignUp_Click);
             // 
             // linkLabel_BackToLogin
             // 
             this.linkLabel_BackToLogin.AutoSize = true;
-            this.linkLabel_BackToLogin.Location = new System.Drawing.Point(199, 233);
+            this.linkLabel_BackToLogin.Location = new System.Drawing.Point(210, 244);
             this.linkLabel_BackToLogin.Name = "linkLabel_BackToLogin";
             this.linkLabel_BackToLogin.Size = new System.Drawing.Size(129, 13);
             this.linkLabel_BackToLogin.TabIndex = 13;
@@ -167,6 +173,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(464, 281);
             this.Controls.Add(this.linkLabel_BackToLogin);
             this.Controls.Add(this.button_SignUp);

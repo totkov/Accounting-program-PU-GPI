@@ -125,5 +125,14 @@ namespace Tiamat.WindowsForms
                 return;
             }
         }
+
+        public void New()
+        {
+            dataGridView.Columns.Add("Debit", "Дебит");
+            dataGridView.Columns.Add("Credit", "Кредит");
+            dataGridView.Columns.Add("Sum", "Сума");
+        }
+
+      
     }
 }

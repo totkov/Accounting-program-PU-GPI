@@ -71,18 +71,20 @@
             // 
             // button_login
             // 
+            this.button_login.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button_login.Location = new System.Drawing.Point(182, 123);
             this.button_login.Name = "button_login";
-            this.button_login.Size = new System.Drawing.Size(140, 23);
+            this.button_login.Size = new System.Drawing.Size(140, 30);
             this.button_login.TabIndex = 4;
             this.button_login.Text = "Вход";
-            this.button_login.UseVisualStyleBackColor = true;
+            this.button_login.UseVisualStyleBackColor = false;
             this.button_login.Click += new System.EventHandler(this.button_login_Click);
             // 
             // linkLabel_singUp
             // 
             this.linkLabel_singUp.AutoSize = true;
-            this.linkLabel_singUp.Location = new System.Drawing.Point(179, 161);
+            this.linkLabel_singUp.Location = new System.Drawing.Point(235, 170);
             this.linkLabel_singUp.Name = "linkLabel_singUp";
             this.linkLabel_singUp.Size = new System.Drawing.Size(87, 13);
             this.linkLabel_singUp.TabIndex = 5;
@@ -94,6 +96,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(464, 282);
             this.Controls.Add(this.linkLabel_singUp);
             this.Controls.Add(this.button_login);
