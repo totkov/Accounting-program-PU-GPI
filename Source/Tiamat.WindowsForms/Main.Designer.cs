@@ -90,12 +90,14 @@
             this.Menu_AccounNote_Open.Name = "Menu_AccounNote_Open";
             this.Menu_AccounNote_Open.Size = new System.Drawing.Size(152, 22);
             this.Menu_AccounNote_Open.Text = "Отвори";
+            this.Menu_AccounNote_Open.Click += new System.EventHandler(this.Menu_AccounNote_Open_Click);
             // 
             // Menu_AccounNote_Save
             // 
             this.Menu_AccounNote_Save.Name = "Menu_AccounNote_Save";
             this.Menu_AccounNote_Save.Size = new System.Drawing.Size(152, 22);
             this.Menu_AccounNote_Save.Text = "Запис";
+            this.Menu_AccounNote_Save.Click += new System.EventHandler(this.Menu_AccounNote_Save_Click);
             // 
             // toolStripSeparator2
             // 
@@ -123,7 +125,7 @@
             // Menu_Balance_New
             // 
             this.Menu_Balance_New.Name = "Menu_Balance_New";
-            this.Menu_Balance_New.Size = new System.Drawing.Size(152, 22);
+            this.Menu_Balance_New.Size = new System.Drawing.Size(119, 22);
             this.Menu_Balance_New.Text = "Нов";
             this.Menu_Balance_New.Click += new System.EventHandler(this.Menu_Balance_New_Click);
             // 
@@ -138,6 +140,7 @@
             this.Menu_Balance_Save.Name = "Menu_Balance_Save";
             this.Menu_Balance_Save.Size = new System.Drawing.Size(119, 22);
             this.Menu_Balance_Save.Text = "Запиши";
+            this.Menu_Balance_Save.Click += new System.EventHandler(this.Menu_Balance_Save_Click);
             // 
             // toolStripSeparator1
             // 

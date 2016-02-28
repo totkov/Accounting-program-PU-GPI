@@ -71,5 +71,25 @@ namespace Tiamat.WindowsForms
             balance.Show();
 
         }
+
+        private void Menu_AccounNote_Save_Click(object sender, EventArgs e)
+        {
+            Form active = this.ActiveMdiChild;
+            var form = active as AccountNote;
+            form.Save();
+        }
+
+        private void Menu_Balance_Save_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_AccounNote_Open_Click(object sender, EventArgs e)
+        {
+            AccountNote note = new AccountNote();
+            note.MdiParent = this;
+            note.Show();
+            note.Load();
+        }
     }
 }
