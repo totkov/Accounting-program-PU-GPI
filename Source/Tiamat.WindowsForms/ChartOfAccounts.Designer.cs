@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ChartOfAccounts));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.listBox = new System.Windows.Forms.ListBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -56,7 +57,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 88F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(698, 485);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(704, 481);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // listBox
@@ -441,9 +442,9 @@
             "99 Разни сметки за условни пасиви",
             "999 Други сметки за условни пасив",
             ""});
-            this.listBox.Location = new System.Drawing.Point(3, 61);
+            this.listBox.Location = new System.Drawing.Point(3, 60);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(692, 421);
+            this.listBox.Size = new System.Drawing.Size(698, 418);
             this.listBox.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -459,7 +460,7 @@
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(692, 52);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(698, 51);
             this.tableLayoutPanel2.TabIndex = 1;
             // 
             // flowLayoutPanel1
@@ -470,7 +471,7 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(340, 46);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(343, 45);
             this.flowLayoutPanel1.TabIndex = 0;
             // 
             // label_search
@@ -497,39 +498,43 @@
             this.flowLayoutPanel2.Controls.Add(this.button_pluse);
             this.flowLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel2.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(349, 3);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(352, 3);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(340, 46);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(343, 45);
             this.flowLayoutPanel2.TabIndex = 1;
             // 
             // button_minus
             // 
-            this.button_minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_minus.Location = new System.Drawing.Point(307, 3);
+            this.button_minus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button_minus.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_minus.Location = new System.Drawing.Point(265, 3);
             this.button_minus.Name = "button_minus";
-            this.button_minus.Size = new System.Drawing.Size(30, 20);
+            this.button_minus.Size = new System.Drawing.Size(75, 23);
             this.button_minus.TabIndex = 2;
             this.button_minus.Text = "-";
-            this.button_minus.UseVisualStyleBackColor = true;
+            this.button_minus.UseVisualStyleBackColor = false;
             this.button_minus.Click += new System.EventHandler(this.button_minus_Click);
             // 
             // button_pluse
             // 
-            this.button_pluse.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_pluse.Location = new System.Drawing.Point(271, 3);
+            this.button_pluse.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button_pluse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_pluse.Location = new System.Drawing.Point(184, 3);
             this.button_pluse.Name = "button_pluse";
-            this.button_pluse.Size = new System.Drawing.Size(30, 20);
+            this.button_pluse.Size = new System.Drawing.Size(75, 23);
             this.button_pluse.TabIndex = 3;
             this.button_pluse.Text = "+";
-            this.button_pluse.UseVisualStyleBackColor = true;
+            this.button_pluse.UseVisualStyleBackColor = false;
             this.button_pluse.Click += new System.EventHandler(this.button_pluse_Click);
             // 
             // ChartOfAccounts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(698, 485);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.ClientSize = new System.Drawing.Size(704, 481);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "ChartOfAccounts";
             this.Text = "ChartOfAccounts";
             this.Load += new System.EventHandler(this.ChartOfAccounts_Load);

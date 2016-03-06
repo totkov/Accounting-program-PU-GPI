@@ -33,7 +33,7 @@ namespace Tiamat.WindowsForms
 
         private void CheckUser(string username, string password)
         {
-            using (FileStream stream = new FileStream("users.txt", FileMode.Open))
+            using (FileStream stream = new FileStream("users.txt", FileMode.OpenOrCreate))
             {
                 using (StreamReader reader = new StreamReader(stream))
                 {
@@ -52,6 +52,14 @@ namespace Tiamat.WindowsForms
                 }
             }
 
+        }
+
+        private void textBox_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button_login_Click(sender, e);
+            }
         }
     }
 

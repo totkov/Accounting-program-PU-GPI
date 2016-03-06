@@ -35,7 +35,8 @@ namespace Tiamat.WindowsForms
         }
         private void Menu_Help_Documentation_Click(object sender, EventArgs e)
         {
-
+            Documentation doc = new Documentation();
+            doc.Show();
         }
 
         private void Menu_Tools_Calculator_Click(object sender, EventArgs e)

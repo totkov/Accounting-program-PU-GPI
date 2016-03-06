@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.label_Username = new System.Windows.Forms.Label();
             this.label_Password = new System.Windows.Forms.Label();
             this.label_RePass = new System.Windows.Forms.Label();
@@ -141,6 +142,7 @@
             this.textBox_LastName.Name = "textBox_LastName";
             this.textBox_LastName.Size = new System.Drawing.Size(140, 20);
             this.textBox_LastName.TabIndex = 11;
+            this.textBox_LastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_LastName_KeyDown);
             // 
             // button_SignUp
             // 
@@ -190,6 +192,7 @@
             this.Controls.Add(this.label_Password);
             this.Controls.Add(this.label_Username);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "SignUp";
             this.Text = "SignUp";

@@ -78,5 +78,21 @@ namespace Tiamat.WindowsForms
                 listBox.Items.Add(item);
             }
         }
+
+        private void StripMenuItem_Delete_Click(object sender, EventArgs e)
+        {
+            items.Remove(listBox.SelectedItem);
+            using (FileStream stream = new FileStream("account.txt", FileMode.Create))
+            {
+                using (StreamWriter writer = new StreamWriter(stream))
+                {
+                    foreach (var item in items)
+                    {
+                        writer.WriteLine(item);
+                    }
+                }
+            }
+            RefreshList();
+        }
     }
 }

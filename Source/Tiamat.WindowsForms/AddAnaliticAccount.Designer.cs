@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddAnaliticAccount));
             this.label_number = new System.Windows.Forms.Label();
             this.label_extention = new System.Windows.Forms.Label();
             this.label_name = new System.Windows.Forms.Label();
@@ -60,7 +61,7 @@
             // label_name
             // 
             this.label_name.AutoSize = true;
-            this.label_name.Location = new System.Drawing.Point(185, 35);
+            this.label_name.Location = new System.Drawing.Point(195, 35);
             this.label_name.Name = "label_name";
             this.label_name.Size = new System.Drawing.Size(29, 13);
             this.label_name.TabIndex = 2;
@@ -69,7 +70,7 @@
             // label_newname
             // 
             this.label_newname.AutoSize = true;
-            this.label_newname.Location = new System.Drawing.Point(185, 65);
+            this.label_newname.Location = new System.Drawing.Point(195, 65);
             this.label_newname.Name = "label_newname";
             this.label_newname.Size = new System.Drawing.Size(29, 13);
             this.label_newname.TabIndex = 3;
@@ -93,31 +94,34 @@
             // 
             this.textBox_name.Location = new System.Drawing.Point(230, 35);
             this.textBox_name.Name = "textBox_name";
-            this.textBox_name.Size = new System.Drawing.Size(80, 20);
+            this.textBox_name.Size = new System.Drawing.Size(155, 20);
             this.textBox_name.TabIndex = 6;
             // 
             // textBox_newname
             // 
             this.textBox_newname.Location = new System.Drawing.Point(230, 62);
             this.textBox_newname.Name = "textBox_newname";
-            this.textBox_newname.Size = new System.Drawing.Size(80, 20);
+            this.textBox_newname.Size = new System.Drawing.Size(155, 20);
             this.textBox_newname.TabIndex = 7;
+            this.textBox_newname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_newname_KeyDown);
             // 
             // button_add
             // 
-            this.button_add.Location = new System.Drawing.Point(230, 124);
+            this.button_add.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.button_add.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button_add.Location = new System.Drawing.Point(305, 114);
             this.button_add.Name = "button_add";
-            this.button_add.Size = new System.Drawing.Size(80, 20);
+            this.button_add.Size = new System.Drawing.Size(80, 30);
             this.button_add.TabIndex = 8;
             this.button_add.Text = "ДОБАВИ";
-            this.button_add.UseVisualStyleBackColor = true;
+            this.button_add.UseVisualStyleBackColor = false;
             this.button_add.Click += new System.EventHandler(this.button_add_Click);
             // 
             // AddAnaliticAccount
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(397, 156);
             this.Controls.Add(this.button_add);
             this.Controls.Add(this.textBox_newname);
@@ -128,6 +132,7 @@
             this.Controls.Add(this.label_name);
             this.Controls.Add(this.label_extention);
             this.Controls.Add(this.label_number);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AddAnaliticAccount";
             this.Text = "AddAnaliticAccount";
             this.ResumeLayout(false);

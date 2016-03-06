@@ -30,5 +30,13 @@ namespace Tiamat.WindowsForms
             this.Close();
         }
 
+        private void textBox_newname_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode==Keys.Enter)
+            {
+                button_add_Click(sender, e);
+            }
+        }
+
     }
 }

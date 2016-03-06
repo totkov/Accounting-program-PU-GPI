@@ -83,5 +83,13 @@ namespace Tiamat.WindowsForms
             }
             return true;
         }
-    }
+
+        private void textBox_LastName_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button_SignUp_Click(sender, e);
+            }
+        }
+    }   
 }

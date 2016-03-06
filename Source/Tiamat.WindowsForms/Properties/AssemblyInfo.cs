@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("Tiamat.WindowsForms")]
-[assembly: AssemblyDescription("Accounting program")]
+[assembly: AssemblyDescription("Възможни операции: Създаване на счетоводен запис и оборотна вемомост, инструменти за работа-Национален сметоводен сметкоплан, възможност за добавяне и съхранение за аналитични счетоводни сметки, калкулатор. Възможности за създаване, запис и съхранение на файлове.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("TT")]
 [assembly: AssemblyProduct("TT Tiamat")]

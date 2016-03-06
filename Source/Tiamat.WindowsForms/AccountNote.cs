@@ -13,6 +13,8 @@ namespace Tiamat.WindowsForms
 {
     public partial class AccountNote : Form
     {
+        private bool mode = true;
+
         public AccountNote()
         {
             InitializeComponent();
@@ -133,6 +135,59 @@ namespace Tiamat.WindowsForms
             dataGridView.Columns.Add("Sum", "Сума");
         }
 
-      
+        private void dataGridView_RowsAdded(object sender, DataGridViewRowsAddedEventArgs e)
+        {
+            toolStripStatusLabel_Rows.Text = "Редове: " + dataGridView.Rows.Count.ToString();
+            if (mode)
+            {
+                ToolStripMenuItem_Light_Click(sender, e);
+            }
+            else
+            {
+                ToolStripMenuItem_Dark_Click(sender, e);
+            }
+        }
+
+        private void ToolStripMenuItem_Light_Click(object sender, EventArgs e)
+        {
+            mode = true;
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
+            {
+                for (int j = 0; j < dataGridView.Columns.Count; j++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        dataGridView[j, i].Style.BackColor = Color.White;
+                        dataGridView[j, i].Style.ForeColor = Color.Black;
+                    }
+                    else
+                    {
+                        dataGridView[j, i].Style.BackColor = Color.LightBlue;
+                        dataGridView[j, i].Style.ForeColor = Color.Black;
+                    }
+                }
+            }
+        }
+
+        private void ToolStripMenuItem_Dark_Click(object sender, EventArgs e)
+        {
+            mode = false;
+            for (int i = 0; i < dataGridView.Rows.Count; i++)
+            {
+                for (int j = 0; j < dataGridView.Columns.Count; j++)
+                {
+                    if (i % 2 == 0)
+                    {
+                        dataGridView[j, i].Style.BackColor = Color.DarkViolet;
+                        dataGridView[j, i].Style.ForeColor = Color.White;
+                    }
+                    else
+                    {
+                        dataGridView[j, i].Style.BackColor = Color.DarkBlue;
+                        dataGridView[j, i].Style.ForeColor = Color.White;
+                    }
+                }
+            }
+        }
     }
 }
