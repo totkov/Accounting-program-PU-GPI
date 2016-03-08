@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.label_username = new System.Windows.Forms.Label();
             this.label_password = new System.Windows.Forms.Label();
@@ -35,6 +36,8 @@
             this.textBox_password = new System.Windows.Forms.TextBox();
             this.button_login = new System.Windows.Forms.Button();
             this.linkLabel_singUp = new System.Windows.Forms.LinkLabel();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label_username
@@ -82,6 +85,7 @@
             this.button_login.Text = "Вход";
             this.button_login.UseVisualStyleBackColor = false;
             this.button_login.Click += new System.EventHandler(this.button_login_Click);
+            this.button_login.Validating += new System.ComponentModel.CancelEventHandler(this.button_login_Validating);
             // 
             // linkLabel_singUp
             // 
@@ -93,6 +97,10 @@
             this.linkLabel_singUp.TabStop = true;
             this.linkLabel_singUp.Text = "Регистрирай се";
             this.linkLabel_singUp.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_singUp_LinkClicked);
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // Login
             // 
@@ -111,6 +119,7 @@
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Text = "Login";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +133,6 @@
         private System.Windows.Forms.TextBox textBox_password;
         private System.Windows.Forms.Button button_login;
         private System.Windows.Forms.LinkLabel linkLabel_singUp;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }

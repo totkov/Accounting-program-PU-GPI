@@ -167,7 +167,7 @@
             // Menu_Tools_Calculator
             // 
             this.Menu_Tools_Calculator.Name = "Menu_Tools_Calculator";
-            this.Menu_Tools_Calculator.Size = new System.Drawing.Size(142, 22);
+            this.Menu_Tools_Calculator.Size = new System.Drawing.Size(152, 22);
             this.Menu_Tools_Calculator.Text = "Калкулатор";
             this.Menu_Tools_Calculator.Click += new System.EventHandler(this.Menu_Tools_Calculator_Click);
             // 
@@ -177,7 +177,7 @@
             this.Menu_Tools_Chart_National,
             this.Menu_Tools_Chart_Personal});
             this.Menu_Tools_Chart.Name = "Menu_Tools_Chart";
-            this.Menu_Tools_Chart.Size = new System.Drawing.Size(142, 22);
+            this.Menu_Tools_Chart.Size = new System.Drawing.Size(152, 22);
             this.Menu_Tools_Chart.Text = "Сметкоплан";
             // 
             // Menu_Tools_Chart_National

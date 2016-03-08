@@ -32,11 +32,11 @@
             this.statusStrip = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel_Rows = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel_Cols = new System.Windows.Forms.ToolStripStatusLabel();
-            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.toolStripStatusLabel_Background = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripSplitButton1 = new System.Windows.Forms.ToolStripSplitButton();
-            this.ToolStripMenuItem_Light = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripMenuItem_Dark = new System.Windows.Forms.ToolStripMenuItem();
+            this.ToolStripMenuItem_Light = new System.Windows.Forms.ToolStripMenuItem();
+            this.dataGridView = new System.Windows.Forms.DataGridView();
             this.statusStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.SuspendLayout();
@@ -65,17 +65,6 @@
             this.toolStripStatusLabel_Cols.Size = new System.Drawing.Size(61, 17);
             this.toolStripStatusLabel_Cols.Text = "Колони: 3";
             // 
-            // dataGridView
-            // 
-            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView.Location = new System.Drawing.Point(0, 0);
-            this.dataGridView.Name = "dataGridView";
-            this.dataGridView.Size = new System.Drawing.Size(463, 273);
-            this.dataGridView.TabIndex = 1;
-            this.dataGridView.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView_RowsAdded);
-            // 
             // toolStripStatusLabel_Background
             // 
             this.toolStripStatusLabel_Background.Name = "toolStripStatusLabel_Background";
@@ -94,19 +83,30 @@
             this.toolStripSplitButton1.Size = new System.Drawing.Size(32, 20);
             this.toolStripSplitButton1.Text = "toolStripSplitButton1";
             // 
-            // ToolStripMenuItem_Light
-            // 
-            this.ToolStripMenuItem_Light.Name = "ToolStripMenuItem_Light";
-            this.ToolStripMenuItem_Light.Size = new System.Drawing.Size(152, 22);
-            this.ToolStripMenuItem_Light.Text = "Светла";
-            this.ToolStripMenuItem_Light.Click += new System.EventHandler(this.ToolStripMenuItem_Light_Click);
-            // 
             // ToolStripMenuItem_Dark
             // 
             this.ToolStripMenuItem_Dark.Name = "ToolStripMenuItem_Dark";
-            this.ToolStripMenuItem_Dark.Size = new System.Drawing.Size(152, 22);
+            this.ToolStripMenuItem_Dark.Size = new System.Drawing.Size(112, 22);
             this.ToolStripMenuItem_Dark.Text = "Тъмна";
             this.ToolStripMenuItem_Dark.Click += new System.EventHandler(this.ToolStripMenuItem_Dark_Click);
+            // 
+            // ToolStripMenuItem_Light
+            // 
+            this.ToolStripMenuItem_Light.Name = "ToolStripMenuItem_Light";
+            this.ToolStripMenuItem_Light.Size = new System.Drawing.Size(112, 22);
+            this.ToolStripMenuItem_Light.Text = "Светла";
+            this.ToolStripMenuItem_Light.Click += new System.EventHandler(this.ToolStripMenuItem_Light_Click);
+            // 
+            // dataGridView
+            // 
+            this.dataGridView.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
+            this.dataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dataGridView.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView.Name = "dataGridView";
+            this.dataGridView.Size = new System.Drawing.Size(463, 273);
+            this.dataGridView.TabIndex = 1;
+            this.dataGridView.RowsAdded += new System.Windows.Forms.DataGridViewRowsAddedEventHandler(this.dataGridView_RowsAdded);
             // 
             // AccountNote
             // 

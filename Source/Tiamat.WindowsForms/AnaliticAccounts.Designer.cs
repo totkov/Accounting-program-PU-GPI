@@ -94,7 +94,9 @@
             // 
             this.listBox.ContextMenuStrip = this.contextMenuStrip;
             this.listBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox.FormattingEnabled = true;
+            this.listBox.ItemHeight = 16;
             this.listBox.Location = new System.Drawing.Point(3, 51);
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(698, 378);
@@ -105,12 +107,12 @@
             this.contextMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.StripMenuItem_Delete});
             this.contextMenuStrip.Name = "contextMenuStrip";
-            this.contextMenuStrip.Size = new System.Drawing.Size(153, 48);
+            this.contextMenuStrip.Size = new System.Drawing.Size(115, 26);
             // 
             // StripMenuItem_Delete
             // 
             this.StripMenuItem_Delete.Name = "StripMenuItem_Delete";
-            this.StripMenuItem_Delete.Size = new System.Drawing.Size(152, 22);
+            this.StripMenuItem_Delete.Size = new System.Drawing.Size(114, 22);
             this.StripMenuItem_Delete.Text = "Изтрий";
             this.StripMenuItem_Delete.Click += new System.EventHandler(this.StripMenuItem_Delete_Click);
             // 

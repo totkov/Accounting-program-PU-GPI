@@ -63,9 +63,9 @@
             // listBox
             // 
             this.listBox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.listBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.listBox.FormattingEnabled = true;
-            this.listBox.ItemHeight = 20;
+            this.listBox.ItemHeight = 16;
             this.listBox.Items.AddRange(new object[] {
             "Национален Сметкоплан",
             "Раздел 1",
@@ -440,8 +440,7 @@
             "983 Разни статистически сметки",
             "989 Други сметки за условни активи",
             "99 Разни сметки за условни пасиви",
-            "999 Други сметки за условни пасив",
-            ""});
+            "999 Други сметки за условни пасив"});
             this.listBox.Location = new System.Drawing.Point(3, 60);
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(698, 418);

@@ -62,7 +62,6 @@ namespace Tiamat.WindowsForms
                 return;
             }   
         }
-
         public void Load()
         {
             string filePath = "";
@@ -127,7 +126,6 @@ namespace Tiamat.WindowsForms
                 return;
             }
         }
-
         public void New()
         {
             dataGridView.Columns.Add("Debit", "Дебит");
@@ -147,7 +145,6 @@ namespace Tiamat.WindowsForms
                 ToolStripMenuItem_Dark_Click(sender, e);
             }
         }
-
         private void ToolStripMenuItem_Light_Click(object sender, EventArgs e)
         {
             mode = true;
@@ -168,7 +165,6 @@ namespace Tiamat.WindowsForms
                 }
             }
         }
-
         private void ToolStripMenuItem_Dark_Click(object sender, EventArgs e)
         {
             mode = false;
@@ -189,5 +185,7 @@ namespace Tiamat.WindowsForms
                 }
             }
         }
+
+        
     }
 }

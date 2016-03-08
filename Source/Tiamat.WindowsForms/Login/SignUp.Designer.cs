@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SignUp));
             this.label_Username = new System.Windows.Forms.Label();
             this.label_Password = new System.Windows.Forms.Label();
@@ -43,6 +44,8 @@
             this.textBox_LastName = new System.Windows.Forms.TextBox();
             this.button_SignUp = new System.Windows.Forms.Button();
             this.linkLabel_BackToLogin = new System.Windows.Forms.LinkLabel();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label_Username
@@ -105,6 +108,7 @@
             this.textBox_Username.Name = "textBox_Username";
             this.textBox_Username.Size = new System.Drawing.Size(140, 20);
             this.textBox_Username.TabIndex = 6;
+            this.textBox_Username.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Username_Validating);
             // 
             // textBox_Password
             // 
@@ -113,6 +117,7 @@
             this.textBox_Password.PasswordChar = '*';
             this.textBox_Password.Size = new System.Drawing.Size(140, 20);
             this.textBox_Password.TabIndex = 7;
+            this.textBox_Password.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_Password_Validating);
             // 
             // textBox_RePass
             // 
@@ -121,6 +126,7 @@
             this.textBox_RePass.PasswordChar = '*';
             this.textBox_RePass.Size = new System.Drawing.Size(140, 20);
             this.textBox_RePass.TabIndex = 8;
+            this.textBox_RePass.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_RePass_Validating);
             // 
             // textBox_Mail
             // 
@@ -128,6 +134,7 @@
             this.textBox_Mail.Name = "textBox_Mail";
             this.textBox_Mail.Size = new System.Drawing.Size(140, 20);
             this.textBox_Mail.TabIndex = 9;
+            this.textBox_Mail.Validated += new System.EventHandler(this.textBox_Mail_Validated);
             // 
             // textBox_FirstName
             // 
@@ -135,6 +142,7 @@
             this.textBox_FirstName.Name = "textBox_FirstName";
             this.textBox_FirstName.Size = new System.Drawing.Size(140, 20);
             this.textBox_FirstName.TabIndex = 10;
+            this.textBox_FirstName.Validating += new System.ComponentModel.CancelEventHandler(this.textBox_FirstName_Validating);
             // 
             // textBox_LastName
             // 
@@ -143,6 +151,7 @@
             this.textBox_LastName.Size = new System.Drawing.Size(140, 20);
             this.textBox_LastName.TabIndex = 11;
             this.textBox_LastName.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox_LastName_KeyDown);
+            this.textBox_LastName.Validated += new System.EventHandler(this.textBox_LastName_Validated);
             // 
             // button_SignUp
             // 
@@ -171,6 +180,10 @@
             this.linkLabel_BackToLogin.Text = "Вече имам регистрация";
             this.linkLabel_BackToLogin.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_BackToLogin_LinkClicked);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // SignUp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -196,6 +209,7 @@
             this.MaximizeBox = false;
             this.Name = "SignUp";
             this.Text = "SignUp";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -217,5 +231,6 @@
         private System.Windows.Forms.TextBox textBox_LastName;
         private System.Windows.Forms.Button button_SignUp;
         private System.Windows.Forms.LinkLabel linkLabel_BackToLogin;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
